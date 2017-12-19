@@ -103,7 +103,8 @@ def EffiGraph1D(effDataList, effMCList, sfList ,nameout, xAxis = 'pT', yAxis = '
     p1.SetLeftMargin( c.GetLeftMargin() )
     p2.SetLeftMargin( c.GetLeftMargin() )
     firstGraph = True
-    leg = rt.TLegend(0.5,0.80,0.95 ,0.92)
+#    leg = rt.TLegend(0.5,0.80,0.95 ,0.92)    ## default!
+    leg = rt.TLegend(0.5,0.50,0.95,0.62)    ## for trigger efficiency (by Dalmin)
     leg.SetFillColor(0)
     leg.SetBorderSize(0)
 
@@ -132,6 +133,11 @@ def EffiGraph1D(effDataList, effMCList, sfList ,nameout, xAxis = 'pT', yAxis = '
     effminmax =  findMinMax( effDataList )
     effiMin = effminmax[0]
     effiMax = effminmax[1]
+
+#    effiMin = 0.18    ## for ID efficiency
+#    effiMax = 1.27
+    effiMin = 0    ## for Trigger efficiency
+    effiMax = 1.27
 
     sfminmax =  findMinMax( sfList )
     sfMin = sfminmax[0]

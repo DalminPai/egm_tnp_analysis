@@ -223,4 +223,5 @@ if args.sumUp:
 
     print 'Effis saved in file : ',  effFileName
     import libPython.EGammaID_scaleFactors as egm_sf
+    #import libPython.EGammaID_scaleFactors_ErrBar as egm_sf
     egm_sf.doEGM_SFs(effFileName,sampleToFit.lumi)

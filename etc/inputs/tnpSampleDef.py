@@ -1,10 +1,10 @@
 from libPython.tnpClassUtils import tnpSample
 
 ### qll stat
-eosDir1 = 'eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/v1/'
-eosDir2 = 'eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/v2/'
-eosDirREC = 'eos/cms/store/group/phys_egamma/tnp/80X/RecoSF/RECOSFs_2016/'
-eosWinter17 = 'eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/Moriond17_v1/'
+eosDir1 = '/eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/v1/'
+eosDir2 = '/eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/v2/'
+eosDirREC = '/eos/cms/store/group/phys_egamma/tnp/80X/RecoSF/RECOSFs_2016/'
+eosWinter17 = '/eos/cms/store/group/phys_egamma/tnp/80X/PhoEleIDs/Moriond17_v1/'
 Moriond17_80X = {
     ### MiniAOD TnP for IDs scale factors
     'DY_madgraph'          : tnpSample('DY_madgraph',

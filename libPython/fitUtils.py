@@ -140,7 +140,7 @@ def histFitterAltSig( sample, tnpBin, tnpWorkspaceParam ):
     tnpWorkspacePar = createWorkspaceForAltSig( sample,  tnpBin, tnpWorkspaceParam )
 
     tnpWorkspaceFunc = [
-        "tailLeft[1]",
+        "tailLeft[-1]",
         "RooCBExGaussShape::sigResPass(x,meanP,expr('sqrt(sigmaP*sigmaP+sosP*sosP)',{sigmaP,sosP}),alphaP,nP, expr('sqrt(sigmaP_2*sigmaP_2+sosP*sosP)',{sigmaP_2,sosP}),tailLeft)",
         "RooCBExGaussShape::sigResFail(x,meanF,expr('sqrt(sigmaF*sigmaF+sosF*sosF)',{sigmaF,sosF}),alphaF,nF, expr('sqrt(sigmaF_2*sigmaF_2+sosF*sosF)',{sigmaF_2,sosF}),tailLeft)",
         "RooCMSShape::bkgPass(x, acmsP, betaP, gammaP, peakP)",
